@@ -24,16 +24,16 @@ cniConfig:
 
 nodes:
   - hostname: "home-k8s"
-    ipAddress: "192.168.1.15"
-    installDisk: "/sys/devices/pci0000:00/0000:00:05.0/0000:01:01.0/virtio2/host2/target2:0:0/2:0:0:0/block/sda"
-    talosImageURL: factory.talos.dev/installer/d3dc673627e9b94c6cd4122289aa52c2484cddb31017ae21b75309846e257d30
+    ipAddress: "192.168.1.16"
+    installDisk: "/dev/sda"
+    talosImageURL: factory.talos.dev/installer/95d432d6bb450a67e801a6ae77c96a67e38820b62ba4159ae7e997e1695207f7
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "bc:24:11:8d:f7:df"
+          hardwareAddr: "bc:24:11:ba:91:9b"
         dhcp: false
         addresses:
-          - "192.168.1.15/24"
+          - "192.168.1.16/24"
         routes:
           - network: 0.0.0.0/0
             gateway: "192.168.1.254"

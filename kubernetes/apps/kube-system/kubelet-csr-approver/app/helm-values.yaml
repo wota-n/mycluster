@@ -1,0 +1,3 @@
+---
+providerRegex: ^(home-k8s)$
+bypassDnsResolution: true

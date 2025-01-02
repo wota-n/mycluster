@@ -24,7 +24,7 @@ cniConfig:
 
 nodes:
   - hostname: "home-k8s"
-    ipAddress: "192.168.1.16"
+    ipAddress: "192.168.1.14"
     installDisk: "/dev/sda"
     talosImageURL: factory.talos.dev/installer/95d432d6bb450a67e801a6ae77c96a67e38820b62ba4159ae7e997e1695207f7
     controlPlane: true
@@ -33,7 +33,7 @@ nodes:
           hardwareAddr: "bc:24:11:ba:91:9b"
         dhcp: false
         addresses:
-          - "192.168.1.16/24"
+          - "192.168.1.14/24"
         routes:
           - network: 0.0.0.0/0
             gateway: "192.168.1.254"
